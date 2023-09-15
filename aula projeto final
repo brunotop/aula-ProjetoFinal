@@ -1,0 +1,132 @@
+
+/****************************
+*    A ABC Corporation      *
+*****************************/
+/*
+function opcao1() {
+    console.log("Você escolheu a Opção 1.");
+  }
+  
+  function opcao2() {
+    console.log("Você escolheu a Opção 2.");
+  }
+  
+  function opcao3() {
+    console.log("Você escolheu a Opção 3.");
+  }
+  
+  function exibirMenu() {
+    console.log("Selecione uma opção:");
+    console.log("1. Opção 1");
+    console.log("2. Opção 2");
+    console.log("3. Opção 3");
+  }
+  
+  exibirMenu();
+  
+  const escolha = prompt("Digite o número da opção desejada:");
+  
+  if (escolha === "1") {
+    opcao1();
+  } else if (escolha === "2") {
+    opcao2();
+  } else if (escolha === "3") {
+    opcao3();
+  } else {
+    console.log("Opção inválida.");
+  } 
+
+let continuar = true
+let empresa
+
+function cadastrar(){
+  let nome = prompt("Qual o nome da empresa")
+  let telefone = Number(prompt("Qual o telefone para contato?"))
+  return ("A empresa", nome, ".Tem o numero", telefone, "para entrarmos em contato se quisermos");
+}
+console.log();
+
+
+ let status = (prompt("Qual seu status?"))
+ if (status % "pendente")
+ console.log("voce ainda esta com pendencias a resolver");
+ 
+
+ function tarefa (titulo, descriçao, status){
+  let a = prompt("Qual o titulo da tarefa?")
+  let b = prompt("Qual é a descriçao desta tarefa?")
+  
+}
+console.log(tarefa);
+
+
+
+function lista(){
+  const quantidadesdetarefas = Number(prompt("Quantas tarefas voce tem hoje?"));
+if (quantidadesdetarefas === 0) {
+  console.log("Sem tarefas por hoje!");
+
+} else if (quantidadesdetarefas > 0) {
+  
+  for (let i = 1; i <= quantidadesdetarefas; i++) {
+    
+    
+    console.log("*------------------------*")
+    console.log("Nomes da Tarefa:");
+    console.log("*------------------------*")
+    console.log(tarefas[i].titulo);
+    console.log("*------------------------")
+    console.log("Descriçao da Tarefa:");
+    console.log("*------------------------*")
+    console.log(tarefas[i].descricao);
+  }
+
+  return
+  }
+}
+console.log(lista());
+listar tarefas
+cadastrar tarefas
+*/
+let tarefas = [];
+let escolha;
+  function CriaTarefa() {
+    console.log("Você escolheu Criar Tarefas.");
+    let nometarefa = prompt(`Digite o nome da sua tarefa ${i}:`);
+    let textodescricao = prompt("Descriçao da tarefa");
+    tarefas.push({titulo: nometarefa, descricao: textodescricao});
+    exibirMenu();
+    escolha = prompt("Digite o número da opção desejada:");
+  }
+  
+  function CadastrarTarefas() {
+    console.log("Você escolheu Cadastrar Tarefas.");
+  }
+  
+  function ListaTarefa() {
+    console.log("Você escolheu Lista Tarefa.");
+  }
+  
+  function exibirMenu() {
+    console.log("Selecione uma opção:");
+    console.log("1. Cria Tarefa");
+    console.log("2. Cadastrar Tarefas ");
+    console.log("3. Lista Tarefa ");
+  }
+  
+  exibirMenu();
+  
+  escolha = prompt("Digite o número da opção desejada:");
+  
+  while(true){
+    if (escolha === "Cria Tarefa") {
+      CriaTarefa();
+    } else if (escolha === "Cadastrar Tarefas") {
+      CadastrarTarefas("Cadastre aqui suas tarefas!");
+    } else if (escolha === "Lista Tarefa") {
+      ListaTarefa("Liste aqui suas Tarefas!");
+    } else {
+      console.log("Opção inválida.");
+    }
+  }
+  
